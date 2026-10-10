@@ -1,0 +1,24 @@
+{
+  "phase": "0",
+  "environment": {
+    "cloud_shell": true
+  },
+  "python": {
+    "version": "3.12.3",
+    "ok": true
+  },
+  "gcloud": {
+    "account": "antoine.danaels@eurecom.fr",
+    "project": "eurecomgpt-511210",
+    "error": null
+  },
+  "docker": {
+    "version": "Docker version 29.8.2, build 7fc2dff",
+    "present": true
+  },
+  "git": {
+    "remote": "https://github.com/4nath0s/EurecomGPT.git",
+    "is_github": true,
+    "slug": "4nath0s/EurecomGPT"
+  }
+}
