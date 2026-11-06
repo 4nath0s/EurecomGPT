@@ -1,0 +1,30 @@
+{
+  "phase": "2",
+  "environment": {
+    "colab": true
+  },
+  "attention": {
+    "naive_ms": 451.724,
+    "vectorized_ms": 1.008,
+    "speedup": 448.14
+  },
+  "threads": {
+    "1": 2227.192,
+    "2": 2000.909,
+    "4": 2503.356,
+    "8": 2176.993
+  },
+  "devices": {
+    "cpu_ms": 434579.0,
+    "gpu_ms": 12671.1
+  },
+  "training": {
+    "steps": 2000,
+    "final_loss": 1.4615,
+    "param_count": 4935680
+  },
+  "sample": "\nCOMIUSLIO:\nWa\nOf Clatucking, and than will not the father other maid,\nPan, side; I'll tell me, of he trange\nThe quick A beards, with a gamens: frigher\nThis quist watch, all their mendly mercife.--\nDoo",
+  "model": {
+    "gcs_url": "https://storage.googleapis.com/eurecomgpt-511211-eurecomgpt/model.safetensors"
+  }
+}
