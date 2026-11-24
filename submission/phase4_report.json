@@ -1,0 +1,27 @@
+{
+  "phase": "4",
+  "chat_url": "https://chat-rwqpkipyxa-uc.a.run.app",
+  "ui_url": "https://storage.googleapis.com/eurecomgpt-511211-eurecomgpt/index.html",
+  "before": {
+    "session_id": "grade-cb7941",
+    "chat_replies": 3,
+    "instance": "55d06aaf",
+    "store": "memory",
+    "history_status": 200,
+    "message_count": 6
+  },
+  "sample": {
+    "question": "love and death",
+    "reply": " face.\n\nProCdan:\nO, Gentlest, sir, but is rent, and the justil of his\nrinousest ",
+    "retrieved": [
+      45,
+      26,
+      33
+    ]
+  },
+  "after": {
+    "instance": "738ecc4b",
+    "history_status": 404,
+    "message_count": 0
+  }
+}
