@@ -70,7 +70,12 @@ def rank_topk(tfidf_rows: list[tuple[str, int, float]], k: int = 3) -> list[int]
     -> scores {12: 7.4, 7: 2.9} -> ``[12, 7]``.
     """
     # TODO: sum tfidf per doc_id, sort by score descending (ties by doc_id), return top-k ids.
-    raise NotImplementedError("Phase 4: implement rank_topk()")
+    scores: dict[int, float] = {}
+    for _term, doc_id, tfidf in tfidf_rows:
+        scores[doc_id] = scores.get(doc_id, 0.0) + tfidf
+    ranked = sorted(scores, key=lambda d: (-scores[d], d))
+    return ranked[:k]
+    
 
 
 def build_rag_prompt(query: str, context_texts: list[str]) -> str:
@@ -99,4 +104,5 @@ def build_rag_prompt(query: str, context_texts: list[str]) -> str:
     """
     # TODO: join context_texts with blank lines under a "Context:" header, then add
     #       "User: <query>" and a final "Assistant:" line.
-    raise NotImplementedError("Phase 4: implement build_rag_prompt()")
+    context = "\n\n".join(context_texts)
+    return f"Context:\n{context}\n\nUser: {query}\nAssistant:"
